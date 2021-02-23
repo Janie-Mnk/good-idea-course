@@ -1,0 +1,18 @@
+title: Good idea
+description: >-
+  How to share good idea and knowlege to the world. How to make the world of
+  differance.
+template:
+  repo: good-idea-template
+  name: good-idea
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
